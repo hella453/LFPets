@@ -1,0 +1,487 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pozadina_white"
+    android:orientation="vertical"
+
+    tools:context="com.parse.starter.Activities.PetProfileActivity">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar">
+
+    </include>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/app_bar"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+
+            <ImageView
+                android:id="@+id/imagePet"
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/pet"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/imePetTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imagePet"
+                android:layout_alignLeft="@+id/imagePet"
+                android:layout_alignWithParentIfMissing="false"
+                android:layout_marginBottom="20dp"
+
+
+                android:layout_marginLeft="72dp"
+                android:fontFamily="sans-serif-regular"
+                android:text="Rex"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="34sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imagePet"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="@dimen/margina_16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="16dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|center_vertical"
+                        android:layout_weight="1.2"
+                        android:src="@drawable/ic_label_grey" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margina_16dp"
+                        android:layout_weight="3"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:fontFamily="sans-serif-regular"
+                            android:text="Pasmina"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/listDetails"
+                            android:textSize="@dimen/podnaslovi_14sp" />
+
+                        <TextView
+                            android:id="@+id/pasminaTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/listTitle"
+                            android:textSize="@dimen/naslovi_16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:fontFamily="sans-serif-regular"
+                            android:text="Spol"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/listDetails"
+                            android:textSize="@dimen/podnaslovi_14sp" />
+
+                        <TextView
+                            android:id="@+id/spolTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/listTitle"
+                            android:textSize="@dimen/naslovi_16sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="@dimen/margina_16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="16dp"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="56dp"
+                        android:layout_weight="3"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView16"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:fontFamily="sans-serif"
+
+                            android:text="Starost"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/listDetails"
+                            android:textSize="@dimen/podnaslovi_14sp" />
+
+                        <TextView
+                            android:id="@+id/starostTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/listTitle"
+                            android:textSize="@dimen/naslovi_16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView18"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:fontFamily="sans-serif-regular"
+                            android:text="Veličina"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/listDetails"
+                            android:textSize="@dimen/podnaslovi_14sp" />
+
+                        <TextView
+                            android:id="@+id/velicinaTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/listTitle"
+                            android:textSize="@dimen/naslovi_16sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="72dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/greyLine" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+
+                    android:layout_marginBottom="@dimen/margina_16dp"
+                    android:layout_marginRight="16dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView7"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|center_vertical"
+                        android:layout_weight="1.2"
+                        android:src="@drawable/ic_room_grey" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margina_16dp"
+                        android:layout_weight="3"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView20"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:fontFamily="sans-serif-regular"
+                            android:text="Grad"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/listDetails"
+                            android:textSize="@dimen/podnaslovi_14sp" />
+
+                        <TextView
+                            android:id="@+id/gradTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/listTitle"
+                            android:textSize="@dimen/naslovi_16sp" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:orientation="vertical">
+
+                        <TextView
+
+                            android:id="@+id/textView22"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:fontFamily="sans-serif-regular"
+                            android:text="Kvart"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/listDetails"
+                            android:textSize="@dimen/podnaslovi_14sp" />
+
+                        <TextView
+                            android:id="@+id/kvartTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/listTitle"
+                            android:textSize="@dimen/naslovi_16sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="72dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/greyLine" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView9"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|center_vertical"
+                        android:layout_weight="1.2"
+                        android:src="@drawable/ic_info_grey" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margina_16dp"
+                        android:layout_weight="6"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView25"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:fontFamily="sans-serif-regular"
+                            android:text="Opis"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/listDetails"
+                            android:textSize="@dimen/podnaslovi_14sp" />
+
+                        <TextView
+                            android:id="@+id/opisTxt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="6"
+                            android:fontFamily="sans-serif"
+                            android:singleLine="false"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/listTitle"
+                            android:textSize="@dimen/naslovi_16sp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="72dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/greyLine" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="8dp"
+
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView8"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|center_vertical"
+                        android:layout_weight="1.2"
+                        android:src="@drawable/ic_quick_contacts_dialer_grey" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_weight="3"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView27"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:fontFamily="sans-serif"
+
+                            android:text="Ime"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/listDetails"
+                            android:textSize="@dimen/podnaslovi_14sp" />
+
+                        <TextView
+                            android:id="@+id/imeOglasivacaTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/listTitle"
+                            android:textSize="@dimen/naslovi_16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView26"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:fontFamily="sans-serif-regular"
+                            android:text="Telefon"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/listDetails"
+                            android:textSize="@dimen/podnaslovi_14sp" />
+
+                        <TextView
+                            android:id="@+id/telefonOglasivacaTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/listTitle"
+                            android:textSize="@dimen/naslovi_16sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="80dp"
+                    android:layout_marginLeft="72dp"
+                    android:layout_marginTop="16dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView24"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="sans-serif-regular"
+                        android:text="Email"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/listDetails"
+                        android:textSize="@dimen/podnaslovi_14sp" />
+
+                    <TextView
+                        android:id="@+id/emailOglasivacaTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="6"
+                        android:fontFamily="sans-serif"
+                        android:singleLine="false"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/listTitle"
+                        android:textSize="@dimen/naslovi_16sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <com.software.shell.fab.ActionButton
+        android:id="@+id/action_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/fab_margin"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:onClick="onClickCall"
+        fab:button_color="@color/accentColor"
+        fab:button_colorPressed="@color/floatBtnPressed"
+        fab:hide_animation="@anim/fab_roll_to_down"
+        fab:image="@drawable/ic_call_white"
+        fab:image_size="24dp"
+        fab:shadow_color="#757575"
+        fab:shadow_radius="1.0dp"
+        fab:shadow_xOffset="0.5dp"
+        fab:shadow_yOffset="1.0dp"
+        fab:show_animation="@anim/fab_roll_from_down"
+        fab:stroke_color="@color/colorPrimaryText"
+        fab:stroke_width="1.0dp"
+        fab:type="DEFAULT" />
+</RelativeLayout>

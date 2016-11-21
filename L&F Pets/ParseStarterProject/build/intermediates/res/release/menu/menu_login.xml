@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.parse.starter.Activities.LoginActivity">
+
+
+    <item android:id="@+id/loginIcon"
+        android:icon="@drawable/ic_forward_white"
+        android:orderInCategory="200"
+        android:title="@string/confirm_icon"
+        app:showAsAction="always"/>
+</menu>
+<!-- From: file:/C:/Users/Placko/Desktop/hopefullylast/L&amp;F%20Pets/ParseStarterProject/res/menu/menu_login.xml -->

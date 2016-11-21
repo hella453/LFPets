@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape>
+            <solid android:color="@color/colorHighlight"></solid>
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <solid android:color="@android:color/white"></solid>
+        </shape>
+    </item>
+</selector><!-- From: file:/C:/Users/Placko/Desktop/hopefullylast/L&amp;F%20Pets/ParseStarterProject/res/drawable/custom_bg.xml -->

@@ -1,0 +1,16 @@
+JvmtiExport can_access_local_variables 0
+JvmtiExport can_hotswap_or_post_breakpoint 0
+JvmtiExport can_post_on_exceptions 0
+# 139 ciObject found
+ciMethod java/lang/Object getClass ()Ljava/lang/Class; 2049 1 256 0 -1
+ciMethod java/lang/Object hashCode ()I 2049 1 256 0 -1
+ciMethod java/lang/Object equals (Ljava/lang/Object;)Z 3113 1 1149 0 -1
+ciMethod java/lang/String equals (Ljava/lang/Object;)Z 3873 16385 2163 0 -1
+ciMethod java/lang/String compareTo (Ljava/lang/String;)I 1945 25137 2341 0 -1
+ciMethod java/lang/Class getName ()Ljava/lang/String; 161 1 20 0 -1
+ciMethod java/util/HashMap hash (Ljava/lang/Object;)I 3073 1 14868 0 0
+ciMethod java/util/HashMap getNode (ILjava/lang/Object;)Ljava/util/HashMap$Node; 2057 1 5398 0 768
+ciMethod java/util/HashMap containsKey (Ljava/lang/Object;)Z 2049 1 5378 0 0
+ciMethod java/util/HashSet contains (Ljava/lang/Object;)Z 2049 1 5376 0 -1
+ciMethod java/util/HashMap$TreeNode getTreeNode (ILjava/lang/Object;)Ljava/util/HashMap$TreeNode; 0 0 1 0 -1
+ciMethodData java/util/HashMap hash (Ljava/lang/Object;)I 2 14868 orig 144 152 11 9 105 0 0 0 0 248 105 73 20 0 0 0 0 16 1 0 0 32 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 128 1 0 0 161 196 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 6 0 3 0 1 0 104 0 0 0 255 255 255 255 0 0 0 0 7 0 1 0 0 0 0 0 data 13 0x10007 0x3894 0x38 0x0 0x50003 0x0 0x48 0x90005 0x20b2 0x16496180 0x140 0x14c44dc0 0x5e1 oops 2

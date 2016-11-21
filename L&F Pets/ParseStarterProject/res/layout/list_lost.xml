@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+
+        android:layout_marginRight="16dp"
+        android:id="@+id/mainLinear">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="4dp"
+            android:contentDescription="@string/image"
+             />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Medium Text"
+                android:textColor="@color/listTitle"
+                android:id="@+id/listaIme"
+                android:textSize="@dimen/naslovi_16sp"
+                android:fontFamily="sans-serif-regular"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Medium Text"
+                android:textSize="@dimen/podnaslovi_14sp"
+                android:textColor="@color/listDetails"
+                android:id="@+id/listaPasmina"
+                android:fontFamily="sans-serif-regular" />
+
+            <TextView
+                android:textColor="@color/listDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Medium Text"
+                android:textSize="@dimen/podnaslovi_14sp"
+                android:id="@+id/listaMjesto"
+                android:fontFamily="sans-serif-regular"
+                />
+        </LinearLayout>
+
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Small Text"
+            android:id="@+id/listaVrijeme"
+            android:textColor="@color/listVrijeme"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:textSize="@dimen/detaljiText_12sp"
+            android:fontFamily="sans-serif-regular"
+            />
+
+    </LinearLayout>
+
+       <View
+           android:layout_width="match_parent"
+           android:layout_height="1dp"
+           android:layout_marginTop="16dp"
+           android:layout_marginLeft="72dp"
+           android:layout_marginRight="16dp"
+
+           android:background="@color/greyLine"
+           android:layout_below="@+id/mainLinear"/>
+
+
+</RelativeLayout>

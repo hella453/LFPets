@@ -1,0 +1,403 @@
+
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pozadina_white">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/app_bar"
+            layout="@layout/app_bar">
+
+        </include>
+
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageViewZivotinje"
+                        android:layout_width="match_parent"
+                        android:layout_height="240dp"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/pet"
+                        android:focusableInTouchMode="true"
+                        android:scaleType="fitXY" />
+
+                    <View
+                        android:id="@+id/body"
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:layout_below="@id/imageViewZivotinje" />
+
+                    <at.markushi.ui.CircleButton
+                        android:id="@+id/bttnPhoto"
+                        android:layout_width="80dip"
+                        android:layout_height="80dp"
+                        android:layout_alignBottom="@id/imageViewZivotinje"
+                        android:layout_alignParentRight="true"
+
+                        android:layout_marginBottom="-40dp"
+                        android:layout_marginRight="20dp"
+                        android:onClick="onClickPhoto"
+                        android:src="@drawable/ic_camera_alt_white"
+                        app:cb_color="@color/accentColor"
+                        app:cb_pressedRingWidth="8dip" />
+
+                    <ProgressBar
+                        style="?android:attr/progressBarStyleLarge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/progressBar"
+
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:visibility="invisible"/>
+
+
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/margina_16dp"
+                    android:layout_marginRight="@dimen/margina_16dp"
+                    android:layout_marginTop="8dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="16dp"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:id="@+id/texttipoglasa"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="16dp"
+                            android:layout_weight="6"
+                            android:text="Tip oglasa"
+                            android:singleLine="true"
+                            android:textSize="@dimen/podnaslovi_14sp"
+                            android:fontFamily="sans-serif"
+                            android:textColor="@color/listDetails"
+                             />
+
+                        <TextView
+                            android:id="@+id/kategorijatext"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:singleLine="true"
+                            android:layout_weight="4"
+                            android:text="Kategorija"
+                            android:textSize="@dimen/podnaslovi_14sp"
+                            android:fontFamily="sans-serif"
+                            android:textColor="@color/listDetails" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/prviRedSpinera"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:orientation="horizontal"
+                        >
+
+                        <Spinner
+                            android:id="@+id/spinnerTipOglasa"
+                            style="@style/Widget.AppCompat.Spinner.Underlined"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="16dp"
+                            android:focusable="true"
+                            android:singleLine="true"
+                            android:layout_weight="6" />
+
+                        <Spinner
+                            android:id="@+id/spinnerKategorija"
+                            style="@style/Widget.AppCompat.Spinner.Underlined"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:layout_weight="4" />
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/imetext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:singleLine="true"
+
+                        android:text="Ime"
+                        android:textSize="@dimen/podnaslovi_14sp"
+                        android:fontFamily="sans-serif"
+                        android:textColor="@color/listDetails" />
+
+                    <EditText
+                        android:id="@+id/inputImeZivotinje"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:singleLine="true"
+                        android:ems="10"
+                        android:focusable="true"
+                        android:textSize="@dimen/naslovi_16sp"
+                        android:fontFamily="sans-serif"
+                        android:textColor="@color/listTitle"
+                        android:textColorHint="@color/listVrijeme"
+                        android:hint="Unesite ime ljubimca"
+                        android:inputType="textCapSentences"/>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="16dp"
+
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/pasminatext"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="16dp"
+                            android:layout_weight="6"
+
+                            android:singleLine="true"
+                            android:text="Pasmina"
+                            android:textSize="@dimen/podnaslovi_14sp"
+                            android:fontFamily="sans-serif"
+                            android:textColor="@color/listDetails" />
+
+                        <TextView
+                            android:id="@+id/spoltext"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_weight="4"
+                            android:focusable="true"
+                            android:singleLine="true"
+                            android:text="Spol"
+                            android:textSize="@dimen/podnaslovi_14sp"
+                            android:fontFamily="sans-serif"
+                            android:textColor="@color/listDetails" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/drugiRedSpinera"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/inputPasmina"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="16dp"
+                            android:textSize="@dimen/naslovi_16sp"
+                            android:fontFamily="sans-serif"
+                            android:textColor="@color/listTitle"
+                            android:singleLine="true"
+                            android:layout_weight="6"
+                            android:textColorHint="@color/listVrijeme"
+                            android:hint="Unesite pasminu"
+                            android:inputType="textCapSentences"/>
+
+                        <Spinner
+                            android:id="@+id/spinnerSpol"
+                            style="@style/Widget.AppCompat.Spinner.Underlined"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:layout_weight="4" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="4dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/starosttext"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:layout_marginRight="16dp"
+                            android:layout_weight="6"
+                            android:text="Starost"
+                            android:textSize="@dimen/podnaslovi_14sp"
+                            android:fontFamily="sans-serif"
+                            android:textColor="@color/listDetails" />
+
+                        <TextView
+                            android:id="@+id/velicinatext"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_weight="4"
+                            android:singleLine="true"
+                            android:text="Veličina"
+                            android:textSize="@dimen/podnaslovi_14sp"
+                            android:fontFamily="sans-serif"
+                            android:textColor="@color/listDetails" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/treciRedSpinera"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:orientation="horizontal"
+
+                        >
+
+                        <Spinner
+                            android:id="@+id/spinnerStarost"
+                            style="@style/Widget.AppCompat.Spinner.Underlined"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="16dp"
+                            android:singleLine="true"
+                            android:layout_weight="6" />
+
+
+                        <Spinner
+                            android:id="@+id/spinnerVelicina"
+                            style="@style/Widget.AppCompat.Spinner.Underlined"
+                            android:layout_width="0dp"
+                            android:singleLine="true"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/gradtext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="16dp"
+
+                        android:text="Grad"
+                        android:textSize="@dimen/podnaslovi_14sp"
+                        android:fontFamily="sans-serif"
+                        android:textColor="@color/listDetails" />
+
+                    <EditText
+                        android:id="@+id/inputGrad"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:singleLine="true"
+                        android:textSize="@dimen/naslovi_16sp"
+                        android:fontFamily="sans-serif"
+                        android:textColorHint="@color/listVrijeme"
+                        android:textColor="@color/listTitle"
+                        android:hint="Unesite ime grada"
+                        android:inputType="textCapSentences"/>
+
+                    <TextView
+                        android:id="@+id/kvarttext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:layout_marginLeft="4dp"
+                        android:text="Kvart"
+                        android:textSize="@dimen/podnaslovi_14sp"
+                        android:fontFamily="sans-serif"
+                        android:textColor="@color/listDetails" />
+
+                    <EditText
+                        android:id="@+id/inputKvart"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:singleLine="true"
+                        android:textSize="@dimen/naslovi_16sp"
+                        android:fontFamily="sans-serif"
+                        android:textColor="@color/listTitle"
+                        android:textColorHint="@color/listVrijeme"
+                        android:hint="Unesite ime kvarta"
+                        android:inputType="textCapSentences"/>
+
+
+                    <TextView
+                        android:id="@+id/opistext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:singleLine="true"
+                        android:layout_marginTop="16dp"
+                        android:text="Opis"
+                        android:textSize="@dimen/podnaslovi_14sp"
+                        android:fontFamily="sans-serif"
+                        android:textColor="@color/listDetails" />
+
+                    <EditText
+                        android:id="@+id/inputOpis"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/naslovi_16sp"
+                        android:fontFamily="sans-serif"
+                        android:textColor="@color/listTitle"
+                        android:focusable="true"
+                        android:textColorHint="@color/listVrijeme"
+                        android:hint="Unesite kratki opis"
+                        android:layout_marginBottom="132dp"
+                        android:inputType="textCapSentences"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/fragment_navigation_drawer"
+        android:name="com.parse.starter.Fragments.NavigationDrawerFragment"
+        android:layout_width="@dimen/nav_drawer_width"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:layout="@layout/fragment_navigation_drawer"
+        tools:layout="@layout/fragment_navigation_drawer">
+
+    </fragment>
+
+
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="pozivniBroj_array">
+        <item>091</item>
+        <item>092</item>
+        <item>095</item>
+        <item>097</item>
+        <item>098</item>
+        <item>099</item>
+    </string-array>
+
+    <string-array name="drawerSpinner_array">
+        <item></item>
+        <item>Odjava</item>
+    </string-array>
+
+    <string-array name="tipOglasa_array">
+        <item>Izgubljen sam</item>
+        <item>Nađen sam</item>
+
+    </string-array>
+
+    <string-array name="kategorija_array">
+        <item>Psi</item>
+        <item>Mačke</item>
+        <item>Glodavci</item>
+        <item>Gmazovi</item>
+        <item>Ostali</item>
+    </string-array>
+
+    <string-array name="spol_array">
+        <item>Mužjak</item>
+        <item>Ženka</item>
+    </string-array>
+
+    <string-array name="starost_array">
+        <item>Beba</item>
+        <item>Mladunče</item>
+        <item>Odrastao</item>
+        <item>Penzioner</item>
+    </string-array>
+
+    <string-array name="velicina_array">
+        <item>Mali</item>
+        <item>Srednji</item>
+        <item>Veliki</item>
+
+    </string-array>
+
+    <string-array name="gradovi_array">
+        <item>Zagreb</item>
+        <item>Split</item>
+        <item>Rijeka</item>
+
+    </string-array>
+
+
+</resources>

@@ -1,0 +1,8 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/main_button_style_2_pressed"
+
+        android:state_pressed="true"/>
+    <item android:drawable="@drawable/main_button_style_2_pressed"
+        android:state_focused="true"/>
+    <item android:drawable="@drawable/main_buttons_style_2"/>
+</selector><!-- From: file:/C:/Users/Placko/Desktop/hopefullylast/L&amp;F%20Pets/ParseStarterProject/res/drawable/button_background_2.xml -->

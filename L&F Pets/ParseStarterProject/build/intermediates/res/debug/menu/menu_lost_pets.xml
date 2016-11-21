@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.parse.starter.Activities.LostPetsActivity">
+
+
+    <item android:id="@+id/searchIcon"
+        android:icon="@drawable/abc_ic_search_api_mtrl_alpha"
+        android:orderInCategory="200"
+        android:title="@string/confirm_icon"
+        app:showAsAction="always"/>
+</menu>
+<!-- From: file:/C:/Users/Placko/Desktop/hopefullylast/L&amp;F%20Pets/ParseStarterProject/res/menu/menu_lost_pets.xml -->

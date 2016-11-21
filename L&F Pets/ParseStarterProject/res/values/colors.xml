@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primaryColor">#Fcd734</color>
+    <color name="primaryColorDark">#F8A724</color>
+    
+    <color name="primaryLight">#D1C4E9</color>
+    <color name="accentColor">#4389FF</color>
+    <color name="colorHighlight">#B6B6B6</color>
+    <color name="colorPrimaryText">#FFFFFF</color>
+    <color name="colorSecondaryText">#FFFFFF</color>
+    <color name="backgroundWhite">#FFFFFF</color>
+    <color name="colorDivider">#B6B6B6</color>
+    <color name="tabsScrollColor">#4389FF</color>
+    <color name="imageBackground">#bcbcbc</color>
+    <color name="tabsScroolSecondaryColor">#FEF2BE</color>
+    <color name="listDetails">#8C000000</color>
+    <color name="listTitle">#E6000000</color>
+    <color name="listVrijeme">#40000000</color>
+    <color name="greyLine">#1A000000</color>
+    <color name="popuniSvaPolja">#EDEDED</color>
+    <color name="floatBtnPressed">#2861ff</color>
+
+</resources>
